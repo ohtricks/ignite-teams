@@ -8,6 +8,17 @@ export const Container = styled.View`
     padding: 24px;
 `;
 
+export const Form = styled.View`
+    width: 100%;
+    background-color: ${({theme}) => theme.COLORS.GRAY_700};
+
+    flex-direction: row;
+    justify-content: center;
+    
+    border-radius: 6px;
+`;
+
+
 export const Content = styled.View`
     flex: 1;
     justify-content: center;
@@ -16,11 +27,4 @@ export const Content = styled.View`
 export const Title = styled.Text`
     font-size: 32px;
     color: #FFF;
-`;
-
-export const Icon = styled(UsersThree).attrs(({theme}) => ({
-    size: 56,
-    color: theme.COLORS.GREEN_700,
-}))`
-    align-self: center;
 `;

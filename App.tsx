@@ -6,6 +6,7 @@ import theme from './src/theme/Index';
 
 import { Groups } from '@screens/Groups/Index';
 import { NewGroup } from '@screens/NewGroup/Index';
+import { Players } from '@screens/Players/Index';
 import { Loading } from '@components/Loading/Index';
 
 export default function App() {
@@ -17,7 +18,7 @@ export default function App() {
         barStyle="light-content"
         translucent
         backgroundColor="transparent" />
-      { fontsLoaded ? <NewGroup /> : <Loading />}
+      { fontsLoaded ? <Players /> : <Loading />}
     </ThemeProvider>
   );
 }
