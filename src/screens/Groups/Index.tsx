@@ -1,15 +1,21 @@
-import { Header } from '@components/Header/Index';
 import { Container } from './styles';
-import { Highlight } from '@components/Highlight/Index';
-import { GroupCard } from '@components/GroupCard/Index';
 import { useState } from 'react';
 import { FlatList } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+import { Header } from '@components/Header/Index';
+import { Highlight } from '@components/Highlight/Index';
+import { GroupCard } from '@components/GroupCard/Index';
 import { ListEmpty } from '@components/ListEmpty/Index';
 import { Button } from '@components/Button/Index';
 
 export function Groups() {
   const [groups, setGroup] = useState<string[]>([]);
+  const navigation = useNavigation();
   
+  function handleNewGroup(){
+    navigation.navigate('new');
+  }
+
   return (
     <Container>
       <Header  />
@@ -26,7 +32,8 @@ export function Groups() {
           <ListEmpty message='Cadastre uma turma' />
         )} />
         
-      <Button title="Criar nova turma"/>
+      <Button title="Criar nova turma"
+        onPress={handleNewGroup}/>
     </Container>
   );
 }
