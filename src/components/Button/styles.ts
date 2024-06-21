@@ -1,6 +1,5 @@
 import { TouchableOpacity } from "react-native";
 import {styled, css} from "styled-components/native";
-import { UsersThree } from "phosphor-react-native";
 
 export type ButtonTypeStyleProps = 'PRIMARY' | 'SECONDARY';
 

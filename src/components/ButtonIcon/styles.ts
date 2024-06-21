@@ -4,6 +4,9 @@ import { MaterialIcons } from '@expo/vector-icons';
 
 export type ButtonIconTypeStyleProps = 'PRIMARY' | 'SECONDARY';
 
+type Props = {
+    type: ButtonIconTypeStyleProps;
+}
 
 export const Container = styled(TouchableOpacity)`
     min-height: 56px;
