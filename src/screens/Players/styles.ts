@@ -1,4 +1,4 @@
-import styled from "styled-components/native";
+import {styled, css} from "styled-components/native";
 import { UsersThree } from "phosphor-react-native";
 
 export const Container = styled.View`
@@ -18,6 +18,22 @@ export const Form = styled.View`
     border-radius: 6px;
 `;
 
+export const HeaderList = styled.View`
+    width: 100%;
+
+    flex-direction: row;
+    align-items: center;
+
+    margin: 32px 0 12px;
+`
+
+export const NumberOfPlayers = styled.Text`
+    ${({theme}) => css`
+        color: ${theme.COLORS.GRAY_200};
+        font-family: ${theme.FONT_FAMILY.BOLD};
+        font-size: ${theme.FONT_SIZE.SM}px;
+    `};
+`;
 
 export const Content = styled.View`
     flex: 1;
