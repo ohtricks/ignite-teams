@@ -23,9 +23,9 @@ export function NewGroup() {
       navigation.navigate('players', {group: group});
     }catch(error){
       if(error instanceof AppError){
-        Alert.alert('Novo Grupo', error.message);
+        Alert.alert('Nova Turma', error.message);
       }else{
-        Alert.alert('Novo Grupo', 'Não foi possivel criar um novo grupo');
+        Alert.alert('Nova Turma', 'Não foi possivel criar uma nova turma');
         console.log(error);
       }
     }

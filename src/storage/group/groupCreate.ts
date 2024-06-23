@@ -9,9 +9,9 @@ export async function groupCreate(newGroup: string){
         const groupAlreadyExists = storageGroups.includes(newGroup);
 
         if(groupAlreadyExists){
-            throw new AppError('Turma já existe!')
+            throw new AppError('Turma já existe!');
         }else if(newGroup.trim().length === 0){
-            throw new AppError('Informe o nome da turma.')
+            throw new AppError('Informe o nome da turma.');
         }
 
         const storage = JSON.stringify([...storageGroups, newGroup]);
