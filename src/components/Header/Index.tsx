@@ -1,5 +1,5 @@
 import { useNavigation } from '@react-navigation/native';
-import { BackButton, BackIcon, Container, ContainerIcon, Logo } from './styles';
+import { BackButton, BackIcon, Container, Logo } from './styles';
 import LogoImg from '@assets/logo.png';
 
 type Props = {

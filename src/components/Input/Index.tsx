@@ -1,8 +1,8 @@
 import { Container } from './styles';
-import {TextInputAndroidProps} from 'react-native';
+import {TextInputProps} from 'react-native';
 import {useTheme} from "styled-components/native";
 
-export function Input({...rest}: TextInputAndroidProps) {
+export function Input({...rest}: TextInputProps) {
   const {COLORS} = useTheme();
   return ( 
     <Container {...rest}
